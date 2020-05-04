@@ -1,12 +1,12 @@
 import React from 'react';
+import AppRouter from './router';
+import { UserProvider } from './store/userStore';
 
 function App() {
   return (
-    <div>
-      <h1>
-        Hello
-      </h1>
-    </div>
+    <UserProvider>
+      <AppRouter />
+    </UserProvider>
   );
 }
 
